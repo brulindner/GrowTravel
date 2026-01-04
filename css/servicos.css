@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #3b63b6;
+  --bg-light: #f8f9fa;
+  --text-color: #555;
+  --white: #ffffff;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+header {
+  background-color: #3b63b6;
+  color: white;
+  padding: 20px 40px;
+}
+
+ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: #bababa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.servicos {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.servicos h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.servicos p {
+  font-size: 1.2rem;
+  color: #777;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.servicos-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.servico-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.icon {
+  width: 20%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.servico-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.servico-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  border-bottom: 4px solid var(--secondary-color);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cta-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  margin-top: 50px;
+}
+
+.cta-section h2 {
+  color: var(--white);
+}
+
+.btn-cta {
+  background-color: #25d366;
+  color: var(--white);
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: #136e34;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
