@@ -1,6 +1,6 @@
 # 🌍 GrowTravel
 
-> 🗺️ **GrowTravel** é um site fictício de uma agência de turismo, desenvolvido para colocar em prática conceitos fundamentais de desenvolvimento web, focando na estruturação semântica e estilização de páginas. **O projeto foi feito em conjunto com a Growdev através da Formação em Desenvolvimento com VTEX IO** 
+🗺️ **GrowTravel** é um site fictício de uma agência de turismo, desenvolvido para colocar em prática conceitos fundamentais de desenvolvimento web, focando na estruturação semântica e estilização de páginas. **O projeto foi feito em conjunto com a Growdev através da Formação em Desenvolvimento com VTEX IO** 
 
 ### 💻 Sobre o Projeto
 
